@@ -1,19 +1,20 @@
 package tema_4;
 import java.util.Arrays;
+import java.util.Scanner;
 public class ejercicio5 {
-    private class Media{
+    private class Average{
         private static int[] numeros = new int[1];
         private static int contador = 0;
         private static int sumatorio = 0;
         private static double media;
 
-        static double Sumatorio(int... nums){
+        static void Media(int... nums){
             assert(numeros != null && nums.length >= 2);
             for(int i=0; i < numeros.length; i++){
                 sumatorio += numeros[i];
             }
-            media = sumatorio / numeros.length;
-            return media;
+            media = (double)sumatorio / contador;
+            System.out.printf("La media es = %1.2f\n", media);
         }
 
         static void numero(int num){
@@ -23,6 +24,20 @@ public class ejercicio5 {
         }
     }
     public static void main(String[] args){
-
+        Scanner entrada = new Scanner(System.in);
+        int entero;
+        System.out.println("ESCRIBE NÚMEROS ESTEROS. PARA FINALIZAR ESCRIBE fin");
+        while(true){
+            String entero_string = entrada.next();
+            if(entero_string.equals("fin")){
+                Average.Media(Average.numeros);
+                break;
+            }
+            else {
+                entero = Integer.parseInt(entero_string);
+                assert (entero == (int)entero);
+                Average.numero(entero);
+            }
+        }
     }
 }
