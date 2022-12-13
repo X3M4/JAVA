@@ -1,3 +1,6 @@
+/*Create a method named media which it accepts a integer array as parameter 
+//and it returns a double number with the average of the number ibside the array.
+You must use assert to check, at least 2 elements in the array and array not null.*/ 
 package tema_4;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -35,7 +38,6 @@ public class ejercicio5 {
             }
             else {
                 entero = Integer.parseInt(entero_string);
-                assert (entero == (int)entero);
                 Average.numero(entero);
             }
         }
