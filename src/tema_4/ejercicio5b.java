@@ -41,6 +41,7 @@ public class ejercicio5b {
                     break;
                 }catch(Exception e){
                     System.out.println(e.getMessage());
+                    break;
                 }          
             }    
             
