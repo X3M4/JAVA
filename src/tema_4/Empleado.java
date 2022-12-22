@@ -1,8 +1,9 @@
 
 /*In this exercise we have this code:
  * // File Empleado.java
-In this branch I'll modify last exercise with a static method for returning the variable nombre. However, I'll need
-to modify Empleado method and to make nombre variable as obligated in the constructor.
+In this branch I set a password for updating or getting
+salario, edad (higher than 18 years) and other variables from Empleado
+class.
  */
 package tema_4;
 
