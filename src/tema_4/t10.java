@@ -3,7 +3,7 @@ package tema_4;
 import java.util.Arrays;
 import java.util.Scanner;
 /*In this exercise an array is created and every space is occupied by an double number generated randomly.
- * After the user chooses a number called 'n' and it calls the methods media for returnning the average of first
+ * After the user chooses a number 'n' and it calls the method media for returnning the average of first
  * n numbers.
  */
 public class t10 {
