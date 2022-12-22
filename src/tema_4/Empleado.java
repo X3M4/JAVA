@@ -1,7 +1,7 @@
 
 /*In this exercise we have this code:
  * // File Empleado.java
-In this branch I'll modify last exercise
+In this branch I'll modify last exercise with a static method for returning the variable nombre
  */
 package tema_4;
 
