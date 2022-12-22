@@ -2,7 +2,7 @@
 /*In this exercise we have this code:
  * // File Empleado.java
 In this branch I set a password for updating or getting
-salario, edad (higher than 18 years) and other variables from Empleado
+salario, edad (higher than 17 years) and other variables from Empleado
 class.
  */
 package tema_4;
@@ -30,7 +30,7 @@ public class Empleado {
     public static String getNombre(){
         return nombre;
     }
-    //Necesitas el pasword para cambiar el sueldo
+    //Necesitas el password para cambiar el sueldo
     public void setSueldo(double sueldo){
         String outPass = outPassword();
         
@@ -41,7 +41,7 @@ public class Empleado {
             Empleado.sueldo = sueldo;
         }
     }
-    //Pasword necesario para obtener el sueldo
+    //Password necesario para obtener el sueldo
     public double getSueldo() throws IllegalArgumentException{
         String outPass = outPassword();
         
