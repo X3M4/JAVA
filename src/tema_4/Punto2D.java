@@ -1,11 +1,12 @@
-/*I add a method named suma to returning one point with the addtion between 2 points */
 package tema_4;
 
 
 public class Punto2D {
     
     private double[] punto = new double[2];
-    
+
+   
+   
     public Punto2D() {
         this.punto[0] = 0;
         this.punto[1] = 0;
@@ -28,8 +29,6 @@ public class Punto2D {
         Punto2D nuevo = new Punto2D(sum_x, sum_y);
         return nuevo;
     }
-
+   
 }
-
-
 
