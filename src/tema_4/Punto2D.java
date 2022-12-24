@@ -1,32 +1,33 @@
+/*I add a method named suma to returning one point with the addtion between 2 points */
 package tema_4;
+
 
 public class Punto2D {
     
-    private static double[] punto = new double[2];
-
-   
-   
+    private double[] punto = new double[2];
+    
     public Punto2D() {
-        Punto2D.punto[0] = 0;
-        Punto2D.punto[1] = 0;
+        this.punto[0] = 0;
+        this.punto[1] = 0;
     }
     public Punto2D(double x, double y) {
-        Punto2D.punto[0] = x;
-        Punto2D.punto[1] = y;
+        this.punto[0] = x;
+        this.punto[1] = y;
     }
 
     public double getX(){
-        return Punto2D.punto[0];
+        return punto[0];
     }
 
     public double getY(){
-        return Punto2D.punto[1];
+        return punto[1];
     }
-    public void setPunto(double sum_x, double sum_y) {
-        Punto2D.punto[0] = sum_x;
-        Punto2D.punto[1] = sum_y;
+    public Punto2D suma(Punto2D p){
+        double sum_x = punto[0] + p.getX();
+        double sum_y = punto[1] + p.getY();
+        Punto2D nuevo = new Punto2D(sum_x, sum_y);
+        return nuevo;
     }
-   
 
 }
 

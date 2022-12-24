@@ -12,7 +12,9 @@ public class pruebaPunto2D {
         System.out.printf("%f - %f\n", p3.getX(), p3.getY());
         System.out.printf("%f - %f\n", p4.getX(), p4.getY());
 
-        
+        Punto2D p5 = p1.suma(p3);
+        System.out.printf("%f - %f\n", p5.getX(), p5.getY());
+        System.out.println(p1 + "+" + p3 + "=" + p5 );
 
 
     }
