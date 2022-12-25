@@ -1,6 +1,5 @@
 package tema_4;
 
-
 public class Punto2D {
     
     private double[] punto = new double[2];
