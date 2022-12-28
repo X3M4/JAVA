@@ -5,14 +5,27 @@ public class Punto2D {
     
     private double[] punto = new double[2];
 
-   
-   
     public Punto2D() {
-        this.punto[0] = 0;
-        this.punto[1] = 0;
+        setX();
+        setY();
     }
     public Punto2D(double x, double y) {
+        setX(x);
+        setY(y);
+    }
+    public void setX(){
+        this.punto[0] = 0;
+    }
+
+    public  void setY(){
+        this.punto[1] = 0;
+    }
+
+    public void setX(double x){
         this.punto[0] = x;
+    }
+
+    public void setY(double y){
         this.punto[1] = y;
     }
 
@@ -23,20 +36,27 @@ public class Punto2D {
     public double getY(){
         return punto[1];
     }
-    public void setPunto(double sum_x, double sum_y) {
-        punto[0] = sum_x;
-        punto[1] = sum_y;
+    public Punto2D suma(Punto2D p){
+        double sum_x = punto[0] + p.getX();
+        double sum_y = punto[1] + p.getY();
+        Punto2D nuevo = new Punto2D(sum_x, sum_y);
+        return nuevo;
     }
-    public void suma(double x, double y){
-        double sum_x = punto[0] + x;
-        double sum_y = punto[1] + y;
-        double[] nuevo = {sum_x, sum_y};
+    @Override
+    public String toString() {
+        return String.format("(%f - %f)", getX(), getY());
+    }
 
-        //List<Object> lista = new ArrayList<>();
-        //lista.add(new Punto2D(sum_x, sum_y));
-        //return lista;
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        if(this == obj) return true;
+        if(obj instanceof Punto2D){
+            Punto2D otro = (Punto2D)obj;
+            if(getX() == otro.getX() && getY() == otro.getY()) return true;
+        }
+        return false;
 
     }
    
 }
-
